@@ -1,0 +1,7 @@
+﻿/*
+ Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
+ For licensing, see https://ckeditor.com/legal/ckeditor-oss-license
+*/
+CKEDITOR.editorConfig=function(a){a.toolbarGroups=[{name:"clipboard",groups:["clipboard","undo"]},{name:"editing",groups:["find","selection","spellchecker"]},{name:"links"},{name:"insert"},{name:"forms"},{name:"tools"},{name:"document",groups:["mode","document","doctools"]},{name:"others"},"/",{name:"basicstyles",groups:["basicstyles","cleanup"]},{name:"paragraph",groups:["list","indent","blocks","align","bidi"]},{name:"styles"},{name:"colors"},{name:"about"}];a.removeButtons="Underline,Subscript,Superscript";
+a.format_tags="p;h1;h2;h3;pre";a.removeDialogTabs="image:advanced;link:advanced";a.language="en";a.font_names+=";Open Sans/Open Sans,Segoe UI,Tahoma,sans-serif;Chivo/Chivo,Comfortaa,sans-serif";window.ctFeatureFlags&&window.ctFeatureFlags["custom-font-management"]&&window.customFont&&(window.__NEW_JOURNEY||window.__NEW_CAMPAIGN)&&(a.font_names+=window.customFont.fontNamesForCkEditor,a.contentsCss=Object.values(window.customFont.fonts).map(function(a){return a.fontUrl}).concat(a.contentsCss));var b=
+a.font_names.split(";").sort();a.font_names=b.join(";");a.extraPlugins="codemirror,scayt,wsc"};
