@@ -999,7 +999,7 @@
 		var regexes = [
 			createEncodedKeywordRegex(),
 			createSourceKeywordRegex(),
-			createIncorrectCommentRegex()
+			// createIncorrectCommentRegex()
 		];
 
 		return function( data ) {
